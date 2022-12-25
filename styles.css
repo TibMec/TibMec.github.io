@@ -28,23 +28,38 @@ h1 {
 }
 
 h2 {
-    padding-top: 30px;
     font-family: 'Boogaloo';
     font-size: 2.5rem;
     font-style: italic;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 
 iframe {
     filter: drop-shadow(0 8px 20px black);
-    padding-bottom: 60px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    padding:  60px 0;
+    margin: 0;
 }
 
 footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 0.5rem;
-    float: right;
-    padding-bottom: 40px;
+    display: flex;
+    justify-content: right;
+    padding: 20px 40px 40px 0;
+}
+
+.footer {
+    margin: 0;
+    background-color: forestgreen;
+    width: 100vw;
+    border-top: 7px solid white;
+    outline: 7px dashed white;
 }
