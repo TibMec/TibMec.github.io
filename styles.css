@@ -1,0 +1,50 @@
+
+
+body {
+    margin: 0;
+    background-color: rgb(224, 24, 24);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}   
+
+.head {
+    margin: 0;
+    background-color: forestgreen;
+    width: 100vw;
+    height: 200px;
+    border-bottom: 7px solid white;
+    outline: 7px dashed white;
+}
+
+h1 {
+    font-family: 'Mountains of Christmas';
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    padding-top: 30px;
+    font-family: 'Boogaloo';
+    font-size: 2.5rem;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    filter: drop-shadow(0 8px 20px black);
+    padding-bottom: 60px;
+}
+
+footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.5rem;
+    float: right;
+    padding-bottom: 40px;
+}
