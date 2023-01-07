@@ -58,10 +58,10 @@ footer {
 
 .footer {
     margin: 0;
-    background-color: forestgreen;
+    background-color: rgb(232, 42, 42);
     width: 100vw;
-    border-top: 7px solid white;
-    outline: 7px dashed white;
+    border-top: 7px solid grey;
+    outline: 7px dashed grey;
 }
 
   .intro,
