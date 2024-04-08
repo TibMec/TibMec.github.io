@@ -1,0 +1,528 @@
+/* TO DO:
+- check for better section height max display
+- add lazy loading
+- ajout d'option touch sur cell/tablettes pour remplacer :hover
+- régler problème sticky button sur safari
+- effet loupe sur les images
+*/
+
+:root {
+  --bg-color: #7acec2;
+  --font-color: #a75f3b;
+  --sct-bg-color: #e6dfcc;
+  --btn-bg-color: #f58b57;
+  --btn-bg-color2: #f5f9e9;
+  --img-cpt-color: #412517;
+  --games-font-color: darkcyan;
+  --bandeau-font: 'Caveat-VariableFont_wght';
+  --menu-font: 'Exo2-BlackItalic';
+  
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth; 
+  }
+
+/* ************************** Font families  **************************** */
+  
+  /*****************  Dosis  ***************/
+@font-face {
+  font-family: 'Dosis-Regular';
+  src: url(./fonts/Dosis-Regular.ttf);
+}
+@font-face {
+  font-family: 'Dosis-Bold';
+  src: url(./fonts/Dosis-Bold.ttf);
+}
+@font-face {
+  font-family: 'Dosis-ExtraBold';
+  src: url(./fonts/Dosis-ExtraBold.ttf);
+}
+@font-face {
+  font-family: 'Dosis-Light';
+  src: url(./fonts/Dosis-Light.ttf);
+}
+@font-face {
+  font-family: 'Dosis-Medium';
+  src: url(./fonts/Dosis-Medium.ttf);
+}
+@font-face {
+  font-family: 'Dosis-VariableFont_wght';
+  src: url(./fonts/Dosis-VariableFont_wght.ttf);
+}
+
+/******************  Exo2  *******************/
+@font-face {
+  font-family: 'Exo2-Black';
+  src: url(./fonts/Exo2-Black.ttf);
+}
+@font-face {
+  font-family: 'Exo2-BlackItalic';
+  src: url(./fonts/Exo2-BlackItalic.ttf);
+}
+@font-face {
+  font-family: 'Exo2-Bold';
+  src: url(./fonts/Exo2-Bold.ttf);
+}
+@font-face {
+  font-family: 'Exo2-BoldItalic';
+  src: url(./fonts/Exo2-BoldItalic.ttf)
+}
+@font-face {
+  font-family: 'Exo2-ExtraBold';
+  src: url(./fonts/Exo2-ExtraBold.ttf);
+}
+@font-face {
+  font-family: 'Exo2-Italic';
+  src: url(./fonts/Exo2-Italic.ttf);
+}
+@font-face {
+  font-family: 'Exo2-Medium';
+  src: url(./fonts/Exo2-Medium.ttf);
+}
+@font-face {
+  font-family: 'Exo2-Regular';
+  src: url(./fonts/Exo2-Regular.ttf);
+}
+@font-face {
+  font-family: 'Exo2-Thin';
+  src: url(./fonts/Exo2-Thin.ttf);
+}
+@font-face {
+  font-family: 'Exo2-Light';
+  src: url(./fonts/Exo2-Light.ttf);
+}
+/*******************  Lato  *******************/
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url(./fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: 'Lato-Black';
+  src: url(./fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url(./fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: 'Lato-Italic';
+  src: url(./fonts/Lato-Italic.ttf);
+}
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url(./fonts/Lato-Thin.ttf);
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url(./fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: 'Lato-ThinItalic';
+  src: url(./fonts/Lato-ThinItalic.ttf);
+}
+/*****************  Caveat  ****************/
+@font-face {
+  font-family: 'Caveat-VariableFont_wght';
+  src: url(./fonts/Caveat-VariableFont_wght.ttf);
+}
+/*****************  Italianno  ****************/
+@font-face {
+  font-family: 'Italianno-Regular';
+  src: url(./fonts/Italianno-Regular.ttf);
+}
+
+/* **************************************************************************** */
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {    
+    color: var(--font-color);
+    font-size: 20px;
+    background-color: var(--bg-color);
+    height: 100%;
+}
+
+.section1 {
+    margin: 0 auto;
+    background-color: var(--sct-bg-color);
+    width: 60%;
+    height: min-content;
+    filter: drop-shadow(0px 0px 45px grey);
+    text-align: center;
+    z-index: 0;
+    border: currentColor outset;
+    border-width: 0 3px;
+}
+
+.section1 p, .title h1, .section1 h2, #img-caption, hr {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+/*************************** Header *********************** */
+.title {
+  /* margin: 0 auto; */
+  padding: 20px;
+  /* height: 140px; */
+  background-color: #8d5c43;
+  /* text-align: center; */
+  color: #f5f9e9;
+  filter: drop-shadow(0px 10px 10px grey);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#catalogue{
+  font-family: 'Dosis-ExtraBold';
+}
+
+div h2{
+  font-family: 'Exo2-BoldItalic';
+  font-size: 2em;
+  color: #8d5c43;
+}
+/* ******************************************** */
+
+/* ********************** Game page ********************** */
+.game-name  {
+  font-family: 'Italianno-Regular';
+  font-size: 4em;
+}
+
+.shady-letter {
+  filter: drop-shadow(2px 1px 0px #d6bf65db)
+}
+
+.section1 .disclaimer, .section1 .description {
+  margin: 46px 50px;
+  text-align: justify;
+}
+
+.section1 .disclaimer {
+  font-family: 'Caveat-VariableFont_wght';
+  font-size: 1.3em;
+  filter: drop-shadow(1px 1px 0px #ec977fdb);
+  /* background-color: #d3aa5e80;
+  padding: 15px;
+  border: solid rgba(115, 11, 11, 0.817) 1px; */
+}
+
+.section1 .description {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-indent: 1.5mm;
+  line-height: 6.5mm;
+  /* letter-spacing: 0.3mm; */
+  color: #412517;
+}
+
+/* ***************************** test triangle début §  ********************************* */
+/* .border {
+  border: solid 1px black;
+} */
+
+/* .box {
+  margin: 50px 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+
+
+/* .triangle-box {
+  margin-left: 50px;
+  display: flex;
+  position: relative;
+  top: 29%;
+} */
+
+/* #triangle {
+  margin: px 0;
+  border-bottom: 8vw solid transparent;
+  border-left: 59vh solid var(--btn-bg-color2);
+  position: relative;
+  top: 90%;
+  left: -98px;
+} */
+
+/* *********************************************************************************** */
+hr {
+  height: 2px;
+  margin: 20px auto;
+  width: 50%;
+  background-color: grey;
+  border-color: brown;
+}
+/* ************************  Menu (nav-bar) ************************* */
+.menu {
+  padding:10px;
+  font-size: 30px;
+  color: var(--img-cpt-color );
+}
+/* ******** menu hover-line ******** */
+.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--btn-bg-color );
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.nav-link {
+  position: relative;
+}
+
+/* ************************************************************** */
+
+/* ************************* Catégories ************************* */
+
+/* span {
+  filter: drop-shadow(2px 1px 0px rgb(199, 188, 188));
+} */
+
+.bandeau {
+  width: 100%;
+  height: 90px;
+  border: outset rgb(249, 202, 141);
+  background-color: burlywood;
+  filter: grayscale(15%);
+  filter: drop-shadow(0px 10px 10px grey);
+  margin: 20px auto 40px;;
+  padding: 20px;
+  color:#b31313;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.catégories {
+  color:rgb(231, 16, 16);
+  font-size: 1.7em;
+  margin-top: 30px;
+  font-family: var(--bandeau-font );
+  font-weight: 700;
+  z-index: -1;
+  }
+
+.highlight:hover {
+  background-color: #41251724;
+}
+  /* ************** Dropdown explication ************* */
+
+  .dropdown-content {
+    display: none;
+    background-color: #ede7d6;
+    min-width: 60px;
+    max-width: 180px;
+    margin: 30px 480px 0px 0px;
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font: 0.6em 'Lato-Regular';
+    color: #412517;
+    position: absolute;
+    left: -195px;
+    z-index: 5;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 5;
+  }
+/* *************************************************** */
+.catégories a {
+  color:var(--games-font-color);
+  font-family: 'Dosis-Light';
+  font-size: 1.5em;
+}
+  
+.catégories>li {
+  font-variant-caps: small-caps;
+  /* font-family: 'Dosis-Light'; */
+  color: var(--games-font-color);
+  font-size: 20px;
+}
+
+a {
+  text-decoration-line: none;
+  color:var(--img-cpt-color);
+  font-family: var(--menu-font);
+  font-weight: bold;
+}
+
+a:hover {
+  color:var(--btn-bg-color);
+}
+
+a:active {
+  color:var(--bg-color);
+}
+
+/* *********************** Boutons ************************* */
+.buttons {
+  margin: 20px auto;
+  padding: 0 20px;
+  height: 30px;
+  font-size: 1em;
+  font-variant: small-caps;
+  border: 3px outset;
+  border-radius: 10px;
+  background-color: var(--btn-bg-color);
+  color: var(--sct-bg-color);
+}
+
+/* .buttons::before {
+  content:"";
+  margin:0
+} */
+
+.buttons a {
+  text-decoration: none;
+  color: var(--sct-bg-color);
+  font-family: 'Exo2-ExtraBold';
+  padding: 0 17px;
+}
+
+.buttons:hover, .buttons:hover a {
+  background-color: var(--btn-bg-color2);
+  color: var(--font-color);
+}
+  
+.buttons:active, .buttons:active a {
+  background-color: var(--font-color);
+  color: var(--btn-bg-color);
+}
+
+.zob {
+  height: 50px;
+  font-size: 1.1em;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 45px;
+  left: 73%;
+  z-index: 1;
+  padding: 0;
+  display: inline-block;
+}
+
+#top {
+  margin-top: 200vh;
+}
+
+.home {
+  margin-bottom: 50px;
+}
+
+#bouton {
+  padding: 10px 17px;
+}
+
+/* ********************************************************** */
+#img-caption {
+  display: block;
+  color: var(--img-cpt-color);
+  font-size: 1em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  font-variant-caps: small-caps
+}
+
+/* **************************** Réactivité ****************************** */
+
+@media (min-width: 769px) and (max-width: 1150px)   {
+  .zob {
+    position: fixed;
+  }
+
+  #top {
+    margin-top: 50px;
+  }
+}
+
+/* @media (max-width: 900px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    background-color: rgb(238, 144, 172);
+  }
+  .section1 {
+    width: 90vw;
+  }
+} */
+
+@media (max-width: 499px) and (min-width: 300px) {
+  
+  /* body {
+    background-color: rgb(238, 144, 172);
+  } */
+
+  .section1 {
+    width: 90vw;
+  }
+
+  .dropdown:active .dropdown-content {
+    display: block;
+    position: absolute;
+    min-width: 80vw;
+    max-width: 180vw;
+    left: 30px;
+    z-index: 5;
+  }
+  
+  .zob {
+    position: fixed;
+    top: 90vh;
+  }
+
+  #top {
+    margin-top: 0;
+  }
+
+  .section1 .disclaimer, .section1 .description {
+    margin: auto;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #image {
+    width: 100% !important;
+    padding: 15px;
+  }
+}
+  
+  
