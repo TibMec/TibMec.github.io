@@ -137,16 +137,15 @@
 
 /* **************************************************************************** */
 
-html{
-    font-size: 62.5%;
+html {
     height: 100%;
 }
 
 body {    
     color: var(--font-color);
-    font-size: 20px;
+    font-size: 1.25rem;
     background-color: var(--bg-color);
-    height: 100%;
+    height: 100vh;
 }
 
 .section1 {
@@ -190,7 +189,7 @@ body {
 
 div h2{
   font-family: 'Exo2-BoldItalic';
-  font-size: 2em;
+  font-size: 2.5rem;
   color: #8d5c43;
 }
 /* ******************************************** */
@@ -198,7 +197,7 @@ div h2{
 /* ********************** Game page ********************** */
 .game-name  {
   font-family: 'Italianno-Regular';
-  font-size: 4em;
+  font-size: 5rem;
 }
 
 .shady-letter {
@@ -212,7 +211,7 @@ div h2{
 
 .section1 .disclaimer {
   font-family: 'Caveat-VariableFont_wght';
-  font-size: 1.3em;
+  font-size: 1.625rem;
   filter: drop-shadow(1px 1px 0px #ec977fdb);
   /* background-color: #d3aa5e80;
   padding: 15px;
@@ -270,7 +269,7 @@ hr {
 /* ************************  Menu (nav-bar) ************************* */
 .menu {
   padding:10px;
-  font-size: 30px;
+  font-size: 1.875rem;
   color: var(--img-cpt-color );
 }
 /* ******** menu hover-line ******** */
@@ -300,7 +299,7 @@ hr {
 
 /* ************************* Catégories ************************* */
 
-/* span {
+/* .span {
   filter: drop-shadow(2px 1px 0px rgb(199, 188, 188));
 } */
 
@@ -321,7 +320,7 @@ hr {
 }
 .catégories {
   color:rgb(231, 16, 16);
-  font-size: 1.7em;
+  font-size: 2.125rem;
   margin-top: 30px;
   font-family: var(--bandeau-font );
   font-weight: 700;
@@ -356,14 +355,15 @@ hr {
 .catégories a {
   color:var(--games-font-color);
   font-family: 'Dosis-Light';
-  font-size: 1.5em;
+  font-size: 1.875rem;
 }
-  
+
+
 .catégories>li {
-  font-variant-caps: small-caps;
+  /* font-variant-caps: small-caps; */
   /* font-family: 'Dosis-Light'; */
   color: var(--games-font-color);
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 a {
@@ -386,7 +386,7 @@ a:active {
   margin: 20px auto;
   padding: 0 20px;
   height: 30px;
-  font-size: 1em;
+  /* font-size: 1em; */
   font-variant: small-caps;
   border: 3px outset;
   border-radius: 10px;
@@ -416,9 +416,9 @@ a:active {
   color: var(--btn-bg-color);
 }
 
-.zob {
+/* .zob {
   height: 50px;
-  font-size: 1.1em;
+  font-size: 1.375rem;
   position: sticky;
   position: -webkit-sticky;
   bottom: 45px;
@@ -426,14 +426,24 @@ a:active {
   z-index: 1;
   padding: 0;
   display: inline-block;
-}
+} */
 
 #top {
-  margin-top: 200vh;
+  --space: 48px;
+  height: 50px;
+  font-size: 1.1em;
+  position: fixed;
+  bottom: var(--space);
+  right: var(--space);
+  z-index: 1;
+  padding: 0;
+  opacity: 1;
+  transition: opacity 500ms;
 }
 
 .home {
   margin-bottom: 50px;
+  font-size: 1.1rem;
 }
 
 #bouton {
@@ -444,7 +454,7 @@ a:active {
 #img-caption {
   display: block;
   color: var(--img-cpt-color);
-  font-size: 1em;
+  /* font-size: 1em; = 20px du body */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: italic;
 
@@ -459,13 +469,7 @@ ul {
 /* **************************** Réactivité ****************************** */
 
 @media (min-width: 769px) and (max-width: 1150px)   {
-  .zob {
-    position: fixed;
-  }
-
-  #top {
-    margin-top: 50px;
-  }
+  
 }
 
 /* @media (max-width: 900px) {
@@ -490,6 +494,7 @@ ul {
 
   .section1 {
     width: 90vw;
+    min-width: initial;
   }
 
   .dropdown:active .dropdown-content {
@@ -500,14 +505,9 @@ ul {
     left: 30px;
     z-index: 5;
   }
-  
-  .zob {
-    position: fixed;
-    top: 90vh;
-  }
 
   #top {
-    margin-top: 0;
+  
   }
 
   .section1 .disclaimer, .section1 .description {
@@ -524,5 +524,6 @@ ul {
     padding: 15px;
   }
 }
+
   
   
