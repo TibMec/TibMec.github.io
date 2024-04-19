@@ -145,19 +145,23 @@ body {
     color: var(--font-color);
     font-size: 1.25rem;
     background-color: var(--bg-color);
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .section1 {
-    margin: 0 auto;
-    background-color: var(--sct-bg-color);
-    width: 60%;
-    height: min-content;
-    filter: drop-shadow(0px 0px 45px grey);
-    text-align: center;
-    z-index: 0;
-    border: currentColor outset;
-    border-width: 0 3px;
+  background-color: var(--sct-bg-color);
+  /*     width: 60%; */
+  flex: 0.6 1 500px;
+  min-width: 475px;
+  max-width: 800px;
+  height: fit-content;
+  filter: drop-shadow(0px 0px 45px grey);
+  text-align: center;
+  z-index: 0;
+  border: currentColor outset;
+  border-width: 0 3px;
 }
 
 .section1 p, .title h1, .section1 h2, #img-caption, hr {
@@ -305,12 +309,10 @@ hr {
 
 .bandeau {
   width: 100%;
-  height: 90px;
   border: outset rgb(249, 202, 141);
   background-color: burlywood;
-  filter: grayscale(15%);
   filter: drop-shadow(0px 10px 10px grey);
-  margin: 20px auto 40px;;
+  margin: 20px auto 40px;
   padding: 20px;
   color:#b31313;
   display: flex;
@@ -502,10 +504,39 @@ ul {
 }
 
 /* **************************** Réactivité ****************************** */
-
-@media (min-width: 769px) and (max-width: 1150px)   {
+@media (max-width: 1190px) {
+  
+  .dropdown-content {
+    position: revert;
+    margin-top: 8px;
+    /* top: 4rem; */
+    /* left: 0; */
+/*     width: 100%; */
+/*     max-width: 100%; */
+    min-width: revert;
+    max-width: revert;
+    box-shadow: inset 0 0 8px burlywood, inset 1px 1px 3px black ;
+    border-radius: 8px;
+    backdrop-filter: saturate(8);
+  }
+  
+/*   .bandeau:active {
+    height: calc(var(--bandeau-hgt) + var(--buffer))
+  } */
+  
   
 }
+
+
+@media (min-width: 769px) and (max-width: 1150px)   {
+/*   .zob {
+    position: fixed;
+  }
+
+  #top {
+    margin-top: 50px;
+  }
+} */
 
 /* @media (max-width: 900px) {
   body {
@@ -515,11 +546,11 @@ ul {
 @media (max-width: 500px) {
   body {
     background-color: rgb(238, 144, 172);
-  }
-  .section1 {
+  } */
+  /* .section1 {
     width: 90vw;
-  }
-} */
+  } */ 
+} 
 
 @media (max-width: 499px) and (min-width: 300px) {
   
@@ -530,19 +561,6 @@ ul {
   .section1 {
     width: 90vw;
     min-width: initial;
-  }
-
-  .dropdown:active .dropdown-content {
-    display: block;
-    position: absolute;
-    min-width: 80vw;
-    max-width: 180vw;
-    left: 30px;
-    z-index: 5;
-  }
-
-  #top {
-  
   }
 
   .section1 .disclaimer, .section1 .description {
@@ -559,6 +577,3 @@ ul {
     padding: 15px;
   }
 }
-
-  
-  
