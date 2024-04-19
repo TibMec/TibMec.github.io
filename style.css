@@ -371,6 +371,10 @@ details[open] > summary::after {
   z-index: 5;
 }
 
+.catégories:last-of-type .dropdown-content {
+  top: 0;
+}
+
 .dropdown:active .dropdown-content {
   display: block;
   z-index: 5;
