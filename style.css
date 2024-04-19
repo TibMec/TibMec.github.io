@@ -331,26 +331,61 @@ hr {
   background-color: #41251724;
 }
   /* ************** Dropdown explication ************* */
+details > summary {
+  list-style-type: '';
+}
 
-  .dropdown-content {
-    display: none;
-    background-color: #ede7d6;
-    min-width: 60px;
-    max-width: 180px;
-    margin: 30px 480px 0px 0px;
-    padding: 20px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    font: 0.6em 'Lato-Regular';
-    color: #412517;
-    position: absolute;
-    left: -195px;
-    z-index: 5;
-  }
+details:not([open]):hover > summary::after  {
+  display: inline-block;
+  font: var(--fa-font-solid);
+  font-size: 1.3rem;
+  content:'\f078';
+  margin-left: 8px;
+  transition: 500ms;
+}
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-    z-index: 5;
-  }
+details[open] > summary::after {
+  display: inline-block;
+  font: var(--fa-font-solid);
+  font-size: 1.3rem;
+  content:'\f078';
+  margin-left: 8px;
+  transform: rotate(-180deg);
+  transition: 350ms;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #ede7d6;
+  min-width: 60px;
+  max-width: 180px;
+/*     margin: 30px 480px 0px 0px; */
+  padding: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font: 0.6em 'Lato-Regular';
+  color: #412517;
+  position: absolute;
+  left: -195px;
+  z-index: 5;
+}
+
+.dropdown:active .dropdown-content {
+  display: block;
+  z-index: 5;
+}
+.dropdown:not(details):hover::after {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  font-size: 1.3rem;
+  content:'\f078';
+  padding-left: 0.8rem;
+}
+.dropdown:not(details):active::after {
+  content:''
+}  
+
 /* *************************************************** */
 .catégories a {
   color:var(--games-font-color);
