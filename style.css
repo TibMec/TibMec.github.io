@@ -15,6 +15,7 @@
 
 :root {
   --bg-color: #7acec2;
+  --bd-color: #b31313;
   --font-color: #a75f3b;
   --sct-bg-color: #e6dfcc;
   --btn-bg-color: #f58b57;
@@ -353,7 +354,7 @@ hr {
           filter: drop-shadow(0px 10px 10px grey);
   margin: 20px auto 40px;
   padding: 20px;
-  color:#b31313;
+  color: var(--bd-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,5 +647,30 @@ ul {
   #image {
     width: 100% !important;
     padding: 15px;
+  }
+
+  #top {
+    --space:16px;
+    transition: opacity 800ms;
+  }
+  
+  
+  #top:hover a {
+    transition: font-size 300ms, padding 300ms;
+  }
+  
+  #top:not(:hover) {
+    
+    background-color: transparent;
+    border: dashed 3px hsl(30 30% 30% /.1);
+    transition: background-color 450ms, opacity 500ms;
+    
+  }
+  #top:not(:hover) a {
+    color: var(--bd-color);
+    padding:0 13px;
+    font-size: 2rem;
+    opacity: 0.3;
+    transition:  font-size 600ms, padding 700ms, opacity 1000ms;
   }
 }
