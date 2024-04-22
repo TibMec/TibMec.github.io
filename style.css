@@ -536,6 +536,7 @@ a:active {
   z-index: 1;
   padding: 0;
   opacity: 1;
+  overflow: hidden;
   -webkit-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
