@@ -359,6 +359,39 @@ const games = [{
     "tags":`#bluff, #rapide & simple`
     },
     {
+    "id": "Sac de Chips",
+    "name": " Sac de Chips",
+    "disclaimer":"Révélez les chips, éliminez les objectifs trop risqués et réussissez les autres pour gagner la partie. Un jeu croustillant qui vous rendra accro !",
+    "description": `Sac de Chips est un jeu délicieux contenant 5 saveurs typiquement québécoises.  Une partie se joue en plusieurs manches.  Chaque manche comporte 4 tirages de Chips.  Choisissez les bonnes cartes Objectifs pour gagner la manche.  ATTENTION!  Si vous êtes trop gourmands, vous pourriez perdre beaucoup!  But : Être le premier joueur qui remporte 4 Jetons victoire.  Qui sera sacré Roi ou Reine de la Chips ?`,
+    "picture": "images/sac-de-chips.png",
+    "picture_width": "width:50%",
+    "alt":"Photo de la boite de jeu",
+    "display":"images/sac-de-chips-dp.png",
+    "displayDescription": "",
+    "players": " 2-5",
+    "length": " 20 min",
+    "âge": "",
+    "tags":`#gestion du hasard, #rapide & simple, #2 joueurs ok`
+    },
+    {
+    "id": "Olé Guacamolé",
+    "name": " Olé Guacamolé",
+    "disclaimer":"Vocabulaire et rapidité seront vos alliés. Parfait pour l'apéro !",
+    "description": `Pimentez votre 5 à 7! Huit secondes de règles pour quinze minutes de rires! À tour de rôle, prononcez un mot qui ne contient aucune des lettres visibles sur la table... et qui est lié au mot précédent! Ça chauffe, car on ajoute une lettre à chaque tour!
+    <br>
+    <br>
+    Jouons! Je viens de dire « Mexique », trouvez un mot lié au mien qui ne contient pas les lettres V, T, O ou D.`,
+    "picture": "images/ole-guacamole.png",
+    "picture_width": "width:50%",
+    "alt":"Photo de la boite de jeu",
+    "display":"images/ole-guacamole-dp.png",
+    "displayDescription": "",
+    "players": " 2-8",
+    "length": " 15 min",
+    "âge": "",
+    "tags":`#mots, #rapide & simple, #2 joueurs ok`
+    },
+    {
     "id": "Exploding Kittens",
     "name": " Exploding Kittens",
     "disclaimer":"Afin d’éviter un sort cruel aux matous, les joueurs peuvent utiliser des cartes spéciales pour attaquer les autres participants, regarder la pile ou déplacer le chat explosif !",

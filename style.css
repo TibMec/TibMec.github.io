@@ -650,6 +650,15 @@ ul {
     padding: 15px;
   }
 
+  details:not([open]) > summary::after  {
+    display: inline-block;
+    font: var(--fa-font-solid);
+    font-size: 1.3rem;
+    content:'\f078';
+    margin-left: 8px;
+    transition: 500ms;
+  }
+
   #top {
     --space:16px;
     transition: opacity 800ms;
