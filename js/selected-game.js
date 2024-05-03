@@ -39,7 +39,7 @@ window.onscroll = () => {
                     alt="${gameData.alt}" style="${gameData.picture_width}">
                     <figcaption id="img-caption" style="${gameData.picture_width}"></figcaption>
                 </figure>
-                <p class="description">${gameData.description}</p>
+                <pre class="description">${gameData.description}</pre>
                 <br>
                 <h2>Aperçu du jeu</h2>
                 <br>

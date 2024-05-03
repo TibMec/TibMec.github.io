@@ -1,4 +1,12 @@
-// - ajouter extensions pour 7 wonders
+/* 
+- ajouter extensions pour 7 wonders
+- Venis du Nord et Maracaibo description
+- trouver manière d'améliorer les images en coupant la boite  + fond transparent
+- tags taboo
+- dispositif de recherche avec les tags
+
+*/
+
 
 const games = [{
     "id": "Duel 7 Wonders",
@@ -453,20 +461,106 @@ const games = [{
       "âge": "",
       "tags":`#draft/combo, #2 joueurs ok`
       },
+      {
+        "id": "Scrabble",
+        "name": " Scrabble",
+        "disclaimer":"Créez les meilleurs mots avec des lettres au hasard. Vocabulaire et orthographe vous aideront.",
+        "description": `Les joueurs tirent au sort leurs lettres dans un sac, puis les posent chacun leur tour sur le plateau de jeu et récoltent un nombre de points égal à la somme des points inscris sur les lettres posées et du/des mot/s adjacent/s (plus certains bonus en fonction de l'emplacement du mot). Chaque mot doit coïncider avec ceux déjà posés horizontalement ou verticalement.
+        Les bonus :
+        . Certaines cases permettent de doubler ou tripler la valeur d'une lettre ou d'un mot.
+        . Le joueur qui arrive à placer les 7 lettres de son support obtiens de 50 points supplémentaires (faire un Scrabble).
+        Lorsque la pioche est vide et qu'un joueur n'a plus de lettre à poser, le jeu s'arrête et le joueur ayant optenu le plus gros score gagne la partie.`,
+        "picture": "images/scrabble.png",
+        "picture_width": "width:65%",
+        "alt":"Photo de la boite de jeu",
+        "display":"images/scrabble-dp.jpeg",
+        "displayDescription": "",
+        "players": "2-4" ,
+        "length": " 60 min et +",
+        "âge": "8 ans et +",
+        "tags":`#lettres, #mots, #vocabulaire, #orthographe, #mot-compte-triple, #2-joueurs-ok `
+        },
+    {
+      "id": "Gutenberg",
+      "name": " Gutenberg",
+      "disclaimer":"Dans Gutenberg, il faut marquer le plus de points en composant des mots avec des cartes Lettre et Voyelle. La victoire n’est attribuée que sur la cinquième et dernière manche, c’est la grande difficulté de ce titre !!! Il va falloir anticiper le tout dans une variation de Scrabble avec des cartes, des défis et du draft",
+      "description": `
+      Jouable seul et jusqu’à six joueurs, Gutenberg offre un défi qui plaira aux joueurs et aux amateurs de lettres. Préparez vos lettres, créez des mots, réussissez des défis et planifiez votre dernière combinaison pour le tour final. Commencez par placer au milieu face visible deux lettres et une voyelle puis distribuez-en cinq à chaque joueur. Pendant les quatre premiers tours de Gutenberg, choisissez une de vos cinq cartes et passez les autres à votre voisin. On continue cet échange quatre fois. Pour remporter ce tour, essayez de former le mot au score le plus élevé avec vos lettres et les lettres communes du milieu. À la fin de chaque tour, vous pouvez ajouter une ou deux lettres et des défis à votre collection. C’est le joueur avec le mot de plus haut score qui choisit en premier. Au cinquième et dernier tour, utilisez le maximum de lettres de votre collection pour composer un dernier mot. Le joueur avec le mot de plus haut score l’emporte.`,
+      "picture": "images/gutenberg.png",
+      "picture_width": "width:67%",
+      "alt":"Photo de la boite de jeu",
+      "display":"images/gutenberg-dp.jpeg",
+      "displayDescription": "",
+      "players": "1-6" ,
+      "length": " 20 min",
+      "âge": "14 et +",
+      "tags":`#lettres, #mots, #vocabulaire, #orthographe, #draft, #solo, #2-joueurs-ok`
+      },
+    {
+      "id": "Alice is missing",
+      "name": " Alice is missing",
+      "disclaimer":"Naviguez dans une aventure haletante entre le jeu d’enquête, le jeu de rôle et le jeu narratif",
+      "description": `ALICE IS MISSING est une expérience ludique, entre jeu d’enquête et jeu de rôle. Alice Briarwood, une lycéenne de la paisible ville de Silent Falls en Californie du Nord, a disparu. Alice Briarwood, une lycéenne de la paisible ville de Silent Falls en Californie du Nord, a disparu. Vous êtes tous des proches d’Alice qui cherchez à découvrir la vérité. Le jeu se déroule dans le silence. Utilisez votre téléphone portable pour envoyer des textos à votre groupe de joueurs et de joueuses, afin de découvrir des indices, et comprendre ce qui est arrivé à Alice. Durant les 90 minutes de la bande-son originale, c’est à vous et à votre groupe de démêler les fils de l’enquête. Développez progressivement la narration grâce aux événements des cartes individuelles et racontez ensemble, dans un silence plein d’incertitudes, l’histoire de la disparition d’Alice…
+      `,
+      "picture": "images/alice-is-missing.jpeg",
+      "picture_width": "width:50%",
+      "alt":"Photo de la boite de jeu",
+      "display":"images/alice-is-missing-dp.jpeg",
+      "displayDescription": "",
+      "players": "3-5" ,
+      "length": "180 min ",
+      "âge": "16 et plus",
+      "tags":`#immersif, #partie longue, #enquête, #coopératif, #roleplay`
+      },
+    {
+      "id": "Taboo",
+      "name": " Taboo",
+      "disclaimer":"Faites deviner des mots sans dire les mots interdits",
+      "description": `Taboo, c'est le jeu de plaisir sous-entendu! Si faire deviner le mot "calories" semble facile, il en est autrement lorsqu’il est interdit de prononcer les mots "brûler", "poids", "nourriture", "régime" et "compter". Pas très facile, finalement, n'est-ce pas? Dans le jeu Taboo, les indices les plus évidents sont tabous! Il faut donc faire preuve de créativité et choisir soigneusement ses indices pour faire deviner rapidement des mots à son équipe. Mais attention! Les mots tabous ne doivent pas être prononcés, sinon le couineur retentira et le point sera perdu! Le jeu classique est devenu trop facile? Il suffit de jouer avec le dé varie-partie pour passer à un autre niveau de jeu. Le dé offre 4 variantes des plus intéressantes au jeu classique, comme celle qui n’autorise qu’un seul coéquipier à deviner. Avec ces versions, les joueurs doivent donc être astucieux, vifs d’esprit et prêts à prendre des risques, tout en évitant de se faire clouer le bec par le couineur!
+      `,
+      "picture": "images/taboo.jpeg",
+      "picture_width": "width:50%",
+      "alt":"Photo de la boite de jeu",
+      "display":"images/taboo-dp.jpeg",
+      "displayDescription": "",
+      "players": "4-10" ,
+      "length": " 20 min",
+      "âge": "12 et +",
+      "tags":``
+      },
+    {
+      "id": "Trivial Pursuit 2000",
+      "name": " Trivial Pursuit 2000",
+      "disclaimer":"Le célèbre jeu de quizz adapté aux années 2000, avec des surprises",
+      "description": `Vous pensez connaître les années 2000 ? Prouvez-le ! Affichez vos connaissances avec la toute nouvelle version de Trivial Pursuit !
+      Seul ou en équipe, le but est d'être le premier à remplir son camembert en répondant correctement aux six catégories de questions. Questions sur les années 2000 à 2015. Nouvelles règles pour des parties plus rapides: Choisissez ce que vous connaissez. Décidez de répondre à une question en vous fiant au thème affiché au haut de la carte ou piégez vos adversaires. Les thèmes ne vous disent rien? Renvoyez la question aux autres joueurs et laissez-les se débrouiller...
+      `,
+      "picture": "images/trivial-pursuit.jpeg",
+      "picture_width": "width:50%",
+      "alt":"Photo de la boite de jeu",
+      "display":"images/trivial-pursuit-dp.jpeg",
+      "displayDescription": "",
+      "players": "2-6" ,
+      "length": " 40 min",
+      "âge": "16 ans et +",
+      "tags":``
+      },
     {
       "id": "",
       "name": " ",
       "disclaimer":"",
-      "description": ``,
-      "picture": "images/.jpg",
+      "description": `
+      `,
+      "picture": "images/",
       "picture_width": "width:50%",
       "alt":"Photo de la boite de jeu",
-      "display":"images/-dp.jpg",
+      "display":"images/-dp",
       "displayDescription": "",
       "players": "" ,
-      "length": "  min",
+      "length": " ",
       "âge": "",
       "tags":``
       },
+    
     
 ];

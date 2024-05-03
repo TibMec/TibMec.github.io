@@ -259,6 +259,8 @@ div h2{
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-indent: 1.5mm;
   line-height: 6.5mm;
+  white-space: break-spaces;
+  padding: 20px;
   /* letter-spacing: 0.3mm; */
   color: #412517;
 }
